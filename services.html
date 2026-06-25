@@ -106,19 +106,89 @@
         </div>
       </div>
     </section>
-
-    <section class="section">
+    <section class="section area-section">
       <div class="container">
-        <div class="two-col">
-          <div class="card">
-            <h2>服務地區</h2>
-            <ul class="list">
-              <li>[請填：台北市可配合區域 / 球場]</li>
-              <li>[請填：新北市可配合區域 / 球場]</li>
-              <li>[請填：其他可討論地點]</li>
-            </ul>
+        <div class="section-heading" style="text-align: center; margin-bottom: 2rem;">
+          <p class="section-label">SERVICE AREA</p>
+          <h2>服務地區與可配合範圍</h2>
+          <p class="section-desc">
+            主要服務台北市西區南區，以及新北市三重以南、木柵以西的區域。<br>
+            紅色虛線範圍因距離較遠，需酌收交通費補貼，實際費用可事先討論。
+          </p>
+        </div>
+
+        <!-- 地圖與圖例區塊 -->
+        <div class="map-container" style="text-align: center; margin-bottom: 3rem;">
+          <img src="assets/service-map.png" alt="網球陪打服務地區範圍地圖" class="responsive-map" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+          
+          <!-- 圖例說明 -->
+          <div class="map-legend" style="display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap;">
+            <div class="legend-item" style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="display: inline-block; width: 24px; height: 16px; background-color: rgba(243, 156, 18, 0.3); border: 1px solid #f39c12; border-radius: 2px;"></span>
+              <span style="font-size: 0.9rem; color: #555;"><strong>主要服務範圍</strong>：免外加交通費</span>
+            </div>
+            <div class="legend-item" style="display: flex; align-items: center; gap: 0.5rem;">
+              <span style="display: inline-block; width: 24px; height: 16px; border: 2px dashed #e74c3c; border-radius: 2px;"></span>
+              <span style="font-size: 0.9rem; color: #555;"><strong>延伸服務範圍</strong>：需酌收交通費</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 詳細地區與時段對照 (改為左右或上下排版) -->
+        <div class="two-col" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+          
+          <!-- 主要服務地區卡片 -->
+          <div class="card area-card primary-area" style="border-top: 5px solid #2ecc71; padding: 1.5rem; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            <h3 style="color: #27ae60; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="background: #2ecc7 green; color: white; border-radius: 50%; width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem;">✓</span>
+              主要服務範圍（免車馬費）
+            </h3>
+            <p style="font-weight: bold; color: #333; font-size: 1.1rem; margin-bottom: 0.5rem;">台北市西區、南區 / 新北市三重以南、木柵以西</p>
+            <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">在主要範圍內，交通距離較近，無需額外收取交通費。</p>
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 1rem;">
+            <p style="font-size: 0.9rem; color: #555; line-height: 1.6;">
+              📍 <strong>包含區域：</strong> 中正區、萬華區、大同區、中山區（西側）、大安區（部分）、文山區（木柵以西）、新店區、永和區、中和區、板橋區、三重區（以南）、新莊區（部分）、土城區、樹林區、三峽區（部分）。
+            </p>
           </div>
 
+          <!-- 延伸服務地區卡片 -->
+          <div class="card area-card extension-area" style="border-top: 5px solid #e74c3c; padding: 1.5rem; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+            <h3 style="color: #c0392b; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+              <span style="background: #e74c3c; color: white; border-radius: 50%; width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.8rem;">!</span>
+              延伸服務範圍（需收交通費）
+            </h3>
+            <p style="font-weight: bold; color: #333; font-size: 1.1rem; margin-bottom: 0.5rem;">紅色虛線範圍內之延伸區域</p>
+            <p style="color: #666; font-size: 0.9rem; margin-bottom: 1rem;">因距離較遠，需酌收交通補貼費用，實際費用依距離與時間討論。</p>
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 1rem;">
+            <p style="font-size: 0.9rem; color: #555; line-height: 1.6;">
+              📍 <strong>包含區域：</strong> 林口區、五股區、蘆洲區、汐止區、內湖區、南港區、士林區、北投區、三峽區（北側）、鶯歌區等。
+            </p>
+          </div>
+
+        </div>
+
+        <!-- 備註與可配合時段 -->
+        <div class="card note-card" style="background-color: #ebf5fb; border-left: 4px solid #3498db; padding: 1.2rem; border-radius: 4px; margin-bottom: 2rem;">
+          <h4 style="color: #2980b9; margin-top: 0; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">ℹ 備註說明</h4>
+          <p style="margin: 0; font-size: 0.95rem; color: #34495e; line-height: 1.5;">
+            如有特殊地點需求或不確定是否在服務範圍內，歡迎先與我聯絡，我會協助評估並提供建議！
+          </p>
+        </div>
+
+        <!-- 可配合時段卡片 -->
+        <div class="card" style="padding: 1.5rem; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+          <h3 style="margin-bottom: 1rem;">可配合時段</h3>
+          <ul class="list" style="line-height: 1.8;">
+            <li><strong>平日晚上：</strong> 可配合 18:30 以後的時段（具體時間可配合球場預約協調）</li>
+            <li><strong>假日時間：</strong> 週六、週日全天皆可預約（請提前 3-5 天確認場地與時間）</li>
+            <li><strong>預約說明：</strong> 因球場多需提早預訂，建議球友們至少提前一週討論並敲定時間。</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    
+    <section class="section">
           <div class="card">
             <h2>可配合時段</h2>
             <ul class="list">
